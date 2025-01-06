@@ -348,7 +348,7 @@ First public launch 🚀
 
 ### Changed
 
-- Dependening on returned module contract equivalent to depending on the module ([#55](https://github.com/NomicFoundation/ignition/pull/55))
+- Depending on returned module contract equivalent to depending on the module ([#55](https://github.com/NomicFoundation/ignition/pull/55))
 
 ## 0.0.2 - 2022-10-26
 
