@@ -3,7 +3,7 @@ import { SolidityParameterType } from "../../../types/module";
 import { FailedEvmExecutionResult } from "./evm-execution";
 
 /**
- * The differnt types of result that executing a future can produce.
+ * The different types of result that executing a future can produce.
  */
 export enum ExecutionResultType {
   SUCCESS = "SUCCESS",
