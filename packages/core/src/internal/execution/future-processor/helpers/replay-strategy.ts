@@ -35,7 +35,7 @@ import {
  *
  * If the ExecutionState has no NetworkInteraction, a new generator is returned.
  */
-async function replayExecutionStartegyWithOnchainInteractions(
+async function replayExecutionStrategyWithOnchainInteractions(
   executionState:
     | DeploymentExecutionState
     | CallExecutionState
@@ -110,7 +110,7 @@ async function replayExecutionStartegyWithOnchainInteractions(
 }
 
 /**
- * This function is the StaticCall-only version of replayExecutionStartegyWithOnchainInteractions.
+ * This function is the StaticCall-only version of replayExecutionStrategyWithOnchainInteractions.
  */
 async function replayStaticCallExecutionStrategy(
   executionState: StaticCallExecutionState,
@@ -181,17 +181,17 @@ export async function replayStrategy(
 > {
   switch (executionState.type) {
     case ExecutionSateType.DEPLOYMENT_EXECUTION_STATE:
-      return replayExecutionStartegyWithOnchainInteractions(
+      return replayExecutionStrategyWithOnchainInteractions(
         executionState,
         strategy
       );
     case ExecutionSateType.CALL_EXECUTION_STATE:
-      return replayExecutionStartegyWithOnchainInteractions(
+      return replayExecutionStrategyWithOnchainInteractions(
         executionState,
         strategy
       );
     case ExecutionSateType.SEND_DATA_EXECUTION_STATE:
-      return replayExecutionStartegyWithOnchainInteractions(
+      return replayExecutionStrategyWithOnchainInteractions(
         executionState,
         strategy
       );
